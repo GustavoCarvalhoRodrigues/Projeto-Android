@@ -10,6 +10,7 @@ body {
   background-color: var(--cor1);
 }
 
+/* Cabeçalho */
 header {
   text-align: center;
   color: white;
@@ -19,20 +20,16 @@ header {
 }
 
 header > h1 {
-  text-shadow: 1px 1px 5px #00000073;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
   font-family: var(--fonte1);
   color: #ffffffed;
 }
 
 header > p {
-  padding-top: 3%;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
 }
 
-header nav {
-  display: grid;
-  justify-content: start;
-}
-
+/* Navegação */
 nav ul {
   display: flex;
   transform: translate(-2vw, 2.4vw);
@@ -53,75 +50,98 @@ ul li > a:hover {
   transition-duration: 0.8s;
 }
 
+p {
+  text-indent: 8px;
+  line-height: 2em;
+}
+
+/* Conteúdo principal */
 main {
   margin: auto;
   box-shadow: 1px 1px 5px #0000007a;
-  max-width: 97vw;
+  min-width: 400px;
+  max-width: 887px;
   background-color: white;
 }
 
-article {
-  padding: 3%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-}
-
 article h1 {
-  margin-bottom: 3%;
   font-family: var(--fonte3);
   color: var(--cor4);
+  margin: 0% 0% 3% 3%;
+  padding-top: 2%;
 }
 
 article h2 {
-  background-image: linear-gradient(to right, #c5ebd6, white);
   font-family: var(--fonte3);
   color: var(--cor4);
+  background-image: linear-gradient(to right, #c5ebd6, white);
 }
 
 article p,
 h2 {
-  margin: 2% 10% 2% 3%;
+  margin: 2% 2% 2% 3%;
 }
 
+/* Palavras negrito */
 strong {
   color: var(--cor4);
 }
 
-p {
-  text-indent: 8px;
-  line-height: 1.5em;
+/* Imgem dan-droids */ 
+picture img {
+  display: block;
+  margin: auto;
 }
 
-.video {
+/* Imagem Bugdroid */
+#foto {
+  display: block;
+  margin: auto;
+}
+
+/* Video */
+div.video {
   background-color: var(--cor4);
-  border: 8px double white;
   position: relative;
-  left: 0%;
-  width: 49vw;
-  padding: 4%;
+  padding-bottom: 59%;
+  margin-bottom: 5%;
+  height: 0px;
 }
 
 video {
-  width: 50vw;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
 }
 
+/* Seção das versões */
 .update {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  margin-top: 1%;
+  position: relative;
+  left: 10%;
+  width: 80%;
   background-color: var(--cor1);
+  border-radius: 4%;
+}
+
+.update > h3 {
+  color: white;
+  background-color: var(--cor3);
+  padding-top: 2%;
 }
 
 .update > ul#version {
-  list-style-position: outside;
+  list-style-type: "\2714\0020\0020";
+  list-style-position: inside;
   columns: 2;
+  padding: 3%;
 }
 
+/* Rodapé */
 footer {
   text-align: center;
   color: white;
